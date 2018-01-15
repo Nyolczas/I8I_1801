@@ -1,0 +1,184 @@
+:root {
+  --main-light-color: hsl(51, 100%, 92%);
+  --main-full-color: hsl(51, 100%, 50%);
+  --main-mid-color: hsl(51, 50%, 50%);
+  --main-dark-color: hsl(51, 80%, 12%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: #262626;
+  }
+
+  /* ======== Navbar ======== */
+  
+  #logo-ul {
+      position: relative;
+    box-sizing: border-box;
+    margin: -10px auto 0 auto;
+    display: block;
+    width: 88px;
+    height: 88px;
+    background-color: var(--main-full-color);
+    border-radius: 50%;
+    z-index: 100;
+  }
+  
+  #logo {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    width: 102%;
+    height: 102%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar {
+    background: var(--main-dark-color);
+  }
+
+  .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: var(--main-full-color);
+    background-color: hsla(0, 0%, 0%, 0); 
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    text-transform: uppercase;
+    position: relative;
+    transition: .2s;
+    color: var(--main-mid-color);
+}
+
+.jumbotron {
+  background-color: var(--main-light-color);
+}
+
+ul li {
+    margin: 2px 1vw;
+}
+
+  ul li a:hover {
+    color:#fff!important;
+  }
+
+  .active>a:hover {
+    color:var(--main-full-color)!important;
+  }
+
+  ul li a span:first-child:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transition: .2s;
+    opacity: 0;
+  }
+  
+  ul li a span:first-child:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .2s;
+    opacity: 0;
+  }
+  
+  ul li a span:last-child:before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transition: .2s;
+    opacity: 0;
+  }
+  
+  ul li a span:last-child:after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: 12px;
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .2s;
+    opacity: 0;
+  }
+  
+  ul li a:hover span:first-child:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  
+  ul li a:hover span:first-child:after {
+    top: 0px;
+    right: 0px;
+    opacity: 1;
+  }
+  
+  ul li a:hover span:last-child:before {
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  
+  ul li a:hover span:last-child:after {
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+  }
+
+  .active>a span:first-child:before {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    border-color: var(--main-full-color);
+  }
+
+  .active>a span:first-child:after {
+    top: 0px;
+    right: 0px;
+    opacity: 1;
+    border-color: var(--main-full-color);
+  }
+  
+  .active>a span:last-child:before {
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    border-color: var(--main-full-color);
+  }
+  
+  .active>a span:last-child:after {
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+    border-color: var(--main-full-color);
+  }
+
+  /* ======== / Navbar ======== */
+
+  main {
+      margin-top: 70px;
+  }
