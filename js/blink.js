@@ -12,7 +12,7 @@ function eyelid() {
     this.x = 0;
     this.y = 0;
     this.forgatas = 0;
-    this.szin = "balck";
+    this.szin = "#D2D2D2";
     this.suly = W / 4;
     this.suly2 = W - this.suly;
     this.nyitott = H;

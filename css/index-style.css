@@ -156,3 +156,15 @@ ul li a:hover span:last-child:after {
   right: -18px;
   opacity: 1;
 }
+
+/* ================ blink canvas ================ */
+
+#blink-canvas{
+  z-index: 1000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  top: 0;
+}
+
+/* ================ blink canvas vége ================ */

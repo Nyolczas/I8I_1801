@@ -34,7 +34,7 @@ var canvas = document.querySelector('canvas');
             "Photoshop", "Illustrator", "Maya", "ZBrush", "AfterEffects", "InDesign",
             "AnimeStudio",
             // programnyelv
-            "JavaSript", "Bootstrap", "JQuery", "Python", "HTML", "CSS",
+            "JavaScript", "Bootstrap", "JQuery", "Python", "HTML", "CSS",
             "PHP", "MySQL", "NodeJS"
         ];
         // =================================== Egér detektálás
