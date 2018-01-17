@@ -183,17 +183,25 @@ ul li a {
 }
 
 @media (min-width: 992px) { 
-    #menu-sav {
+    #menu-sav, #head-wrap {
         max-width: 992px;
         margin: auto;
+    }
+
+    #nav-icon3 {
+        right: calc((100vw - 992px) / 2 + 20px);
     }
  }
 
 
 @media (min-width: 1200px) { 
-    #menu-sav {
+    #menu-sav, #head-wrap {
         max-width: 1200px;
         margin: auto;
+    }
+
+    #nav-icon3 {
+        right: calc((100vw - 1200px) / 2 + 20px);
     }
  }
 
