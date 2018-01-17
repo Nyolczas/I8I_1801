@@ -26,40 +26,55 @@ ul {
     flex-direction: column;
     max-width: 100%;
     padding: 0;
-  }
+}
   
-  ul li{
+ul li{
     list-style: none;
     padding: .8rem 0;
     width: 100%;
     text-align: center;
     margin: auto;
-  }
+}
 
-  ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    position: relative;
-    padding: .5rem;
-    transition: .2s;
-    color: var(--main-text-color);
-  }
+ul li a {
+text-decoration: none;
+font-size: 1.2rem;
+text-transform: uppercase;
+position: relative;
+padding: .5rem;
+transition: .2s;
+color: var(--main-text-color);
+}
 
-  #menu-panel {
-      background-color: var(--main-bg-color);
-      display: none; 
-  }
+#menu-panel {
+    background-color: var(--main-bg-color);
+    display: none; 
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     ul {
-      flex-direction: row;
+        flex-direction: row;
     }
-  
+
     ul li {
-      padding: .8rem 3vw;
+        padding: .8rem 3vw;
     }
-  }
+}
+
+@media (min-width: 992px) { 
+    #menu-sav {
+        max-width: 992px;
+        margin: auto;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    #menu-sav {
+        max-width: 1200px;
+        margin: auto;
+    }
+ }
 
 /* ================ menü vége ================ */
 
