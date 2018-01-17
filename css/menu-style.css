@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Merriweather&subset=latin-ext');
 
-/* ================ Változók ================ */
+/* ================ Document ================ */
 :root {
-    --main-text-color: hsl(0, 0%, 90%);
+    --menu-text-color: hsl(0, 0%, 90%);
     --menu-bg-color: hsl(0, 0%, 20%);
-    --menu-full-color: hsl(0, 0%, 75%);
+    --menu-full-color: hsl(0, 100%, 50%);
 }
-
-/* ================ Változók vége ================ */
 
 * {
     margin: 0px;
@@ -15,40 +13,51 @@
     font-family: 'Lato', sans-serif;
 }
 
+/* ================ Document vége ================ */
+
+/* ================ Header ================ */
+
 h1 {
     font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: 15px 100px 15px 100px;
+    font-size: 1.8em;
 }
 
+/* ================ Header ================ */
+
+/* ================ logo ================ */
+
 #logo-ul {
-    position: relative;
-  box-sizing: border-box;
-  margin: -10px auto 0 auto;
-  display: block;
-  width: 88px;
-  height: 88px;
-  background-color: var(--main-full-color);
-  border-radius: 50%;
-  z-index: 100;
+    position: absolute;
+    top: -5px;
+    width: 88px;
+    height: 88px;
+    background-color: var(--menu-full-color);
+    border-radius: 50%;
+    z-index: 100;
 }
 
 #logo {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin: auto;
-  width: 102%;
-  height: 102%;
-  transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    width: 102%;
+    height: 102%;
+    transform: translate(-50%, -50%);
 }
 
+/* ================ logo vége ================ */
 
-/* ================ nav ikon ================ */
+/* ================ nav-ikon ================ */
 
 #nav-icon3 {
     width: 40px;
     height: 30px;
-    position: relative;
-    margin: 10px 10px 10px auto;
+    position: absolute;
+    right: 20px;
+    top: 20px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -139,13 +148,13 @@ ul li{
 }
 
 ul li a {
-text-decoration: none;
-font-size: 1.2rem;
-text-transform: uppercase;
-position: relative;
-padding: .5rem;
-transition: .2s;
-color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: .5rem;
+    transition: .2s;
+    color: var(--menu-text-color);
 }
 
 #menu-panel {
@@ -156,6 +165,7 @@ color: var(--main-text-color);
 @media (min-width: 768px) {
     ul {
         flex-direction: row;
+        padding-left: 50px;
     }
 
     ul li {
