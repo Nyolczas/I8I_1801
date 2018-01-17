@@ -47,7 +47,18 @@ ul {
   }
 
   #menu-panel {
-      background-color: var(--main-bg-color); 
+      background-color: var(--main-bg-color);
+      display: none; 
+  }
+
+  @media (min-width: 768px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    ul li {
+      padding: .8rem 3vw;
+    }
   }
 
 /* ================ menü vége ================ */
