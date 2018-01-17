@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/menu-style.css">
-</head>
-<body>
-  <header>
-    <div id="head-wrap">
-      <!-- logóm -->
-      <a href="#">
-          <div id="logo-ul">
-              <img id="logo" src="img\logo-transp.png" alt="8-i logo">
-          </div>
-      </a>
-  
-      <!-- header -->
-      <h1>Nyolczas István</h1>  
-  
-      <!-- nav ikon -->
-      <div id="nav-icon3">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
-    </div>
-  </header>
 
-    <!-- menü panel -->
-    <nav id="menu-panel">
-      <div id="menu-sav">
-        <ul>
-            <li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/menu-style.css">
+</head>
+
+<body>
+  <canvas onclick="textExplosion()" id="canvas"></canvas>
+  <div id="offcanvas">
+    <div id="offcanvas2">
+      <header>
+        <div id="head-wrap">
+          <!-- logóm -->
+          <a href="#">
+            <div id="logo-ul">
+              <img id="logo" src="img\logo-transp.png" alt="8-i logo">
+            </div>
+          </a>
+
+          <!-- header -->
+          <h1>Nyolczas István</h1>
+
+          <!-- nav ikon -->
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- menü panel -->
+      <nav id="menu-panel">
+        <div id="menu-sav">
+          <ul>
+            <li class="active">
               <a id="link" class="link" href="fooldal.html">Főoldal
                 <span></span>
                 <span></span>
@@ -59,13 +64,16 @@
               </a>
             </li>
           </ul>
-      </div>
-    </nav>
+        </div>
+      </nav>
+      <!-- menü panel vége -->
+    </div>
+  </div>
 
-    <!-- menü panel vége -->
-
-    <!-- ================ scripts ================ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/hambi.js"></script>
+  <!-- ================ scripts ================ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/hambi.js"></script>
+  <script src="js/color-bubbles-txt-anim.js"></script>
 </body>
+
 </html>
