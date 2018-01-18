@@ -5,53 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Főoldal | 8-I</title>
-
-  <link rel="stylesheet" href="css/basic-style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/menu-style.css">
   <link rel="stylesheet" href="css/index-style.css">
 </head>
 
 <body>
-  <canvas onclick="textExplosion()" id="canvas"></canvas>
-  <div class="container">
-    <div id="logo-ul">
-      <img id="logo" src="img\logo-transp.png" alt="8-i logo">
-    </div>
-    <h1 id="h1">Nyolczas István</h1>
-    <h2 id="h2">Grafikus - Webfejlesztő</h2>
-    <hr>
-    <ul>
-      <li>
-        <a id="link" class="link" href="bemutatkozas.html">Bemutatkozás
-          <span></span>
-          <span></span>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="szolgaltatasok.html">Szolgáltatások
-          <span></span>
-          <span></span>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="portfolio.html">Portfólió
-          <span></span>
-          <span></span>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="kapcsolat.html">Kapcsolat
-          <span></span>
-          <span></span>
-        </a>
-      </li>
-    </ul>
-    <hr>
-  </div>
-  <canvas id="blink-canvas"></canvas>
+  <canvas onclick="textExplosion()" id="canvas" width="1920" height="1080"></canvas>
+  <main>
+      <header>
+        <div id="head-wrap">
+          <!-- logóm -->
+          <a href="#">
+            <div id="logo-ul">
+              <img id="logo" src="img\logo-transp.png" alt="8-i logo">
+            </div>
+          </a>
 
+          <!-- header -->
+          <h1>Nyolczas István</h1>
+
+          <!-- nav ikon -->
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- menü panel -->
+      <nav id="menu-panel">
+        <div id="menu-sav">
+          <ul>
+            <li class="active">
+              <a id="link" class="link" href="fooldal.html">Főoldal
+                <span></span>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="bemutatkozás.html">Bemutatkozás
+                <span></span>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="portfolio.html">Portfólió
+                <span></span>
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="kapcsolat.html">Kapcsolat
+                <span></span>
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- menü panel vége -->
+      <section >
+        <p>
+          Kattints a buborékokra, <br>
+          és fedezd fel a világomat!
+        </p>
+      </section>
+  </main>
+  <!-- ================ scripts ================ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/hambi.js"></script>
   <script src="js/color-bubbles-txt-anim.js"></script>
-  <script src="js/blink.js"></script>
 </body>
 
 </html>

@@ -20,16 +20,12 @@ body {
     overflow: hidden;
 }
 
-#offcanvas {
+main {
     position: absolute;
     top: 0px;
     width: 100vw;
 }
 
-#offcanvas2 {
-    position: relative;
-    
-}
 /* ================ Document vége ================ */
 
 /* ================ Header ================ */
