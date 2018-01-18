@@ -49,6 +49,7 @@ h1 {
 #logo-ul {
     position: absolute;
     top: -5px;
+    /* left: -5px; */
     width: 88px;
     height: 88px;
     background-color: var(--menu-full-color);
@@ -197,7 +198,7 @@ ul li a {
 }
 
 @media (min-width: 992px) { 
-    #menu-sav, #head-wrap {
+    #menu-sav, .head-wrap {
         max-width: 992px;
         margin: auto;
     }
@@ -205,6 +206,9 @@ ul li a {
     #nav-icon3 {
         right: calc((100vw - 992px) / 2 + 20px);
     }
+
+
+
  }
 
 
@@ -213,7 +217,7 @@ ul li a {
         padding-left: 20px;
     }
 
-    #menu-sav, #head-wrap {
+    #menu-sav, .head-wrap {
         max-width: 1200px;
         margin: auto;
     }

@@ -1,4 +1,6 @@
-section {
+/* ================ index ================ */
+
+#section {
   max-width: 260px;
   margin: 30vh auto 0px auto;
   padding: 20px;
@@ -10,3 +12,13 @@ section {
   background-color: var(--menu-light-color);
   box-shadow: 0px 0px 20px black;
 }
+
+/* ================ index vége ================ */
+.kenyer {
+  color: hsla(0, 0%, 0%, 0.9);
+  background-color: var(--menu-light-color);
+}
+/* ================ bemutatkozás ================ */
+
+/* ================ bemutatkozás vége ================ */
+
