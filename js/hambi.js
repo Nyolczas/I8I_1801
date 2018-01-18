@@ -12,7 +12,7 @@ $(document).ready(function () {
 		$("#section").hide();
 	});
 	$("main").click(function () {
-		$("#section").hide("slow");
+		$("#section").hide();
 	});
 });
 

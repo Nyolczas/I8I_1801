@@ -20,5 +20,12 @@
 }
 /* ================ bemutatkozás ================ */
 
+.article {
+  padding: 20px;
+}
+
+.article p {
+  text-align: justify;
+}
 /* ================ bemutatkozás vége ================ */
 
