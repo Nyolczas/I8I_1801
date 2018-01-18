@@ -13,6 +13,7 @@ var MenuDarkColor = "hsl(0, 40%, 20%)";
 var MenuFullColor = "hsl(0, 100%, 50%)";
 var bubbleColor = "hsla(0, 50%, 50%, 0.1)";
 var emitterEnabled = false;
+var title = document.getElementsByTagName("title")[0].innerHTML;
 
 
 var textCloud = [
@@ -245,10 +246,12 @@ setInterval(function () {
     document.documentElement.style.setProperty('--menu-light-color', menuLightColor);
     document.documentElement.style.setProperty('--menu-dark-color', MenuDarkColor);
     document.documentElement.style.setProperty('--menu-full-color', MenuFullColor);
-    for (var i = 0; i < CircleArray.length; i++) {
-        CircleArray[i].update();
-    }
-    for (var i in txtParticles) {
-        txtParticles[i].draw();
+    if (title == "Főoldal") {
+        for (var i = 0; i < CircleArray.length; i++) {
+            CircleArray[i].update();
+        }
+        for (var i in txtParticles) {
+            txtParticles[i].draw();
+        }
     }
 }, 30);
