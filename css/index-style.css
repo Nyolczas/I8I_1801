@@ -1,8 +1,12 @@
 section {
   max-width: 260px;
-  margin: 20px auto;
-  color: var(--menu-light-color);
+  margin: 30vh auto 0px auto;
+  padding: 20px;
+  border-radius: 5px;
   text-align: center;
   line-height: 1.4rem;
   letter-spacing: 0.05rem;
+  color: hsla(0, 0%, 0%, 0.9);
+  background-color: var(--menu-light-color);
+  box-shadow: 0px 0px 20px black;
 }

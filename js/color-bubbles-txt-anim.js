@@ -1,3 +1,4 @@
+// =================================== változók
 var canvas = document.querySelector('canvas');
 var W = window.innerWidth;
 var H = window.innerHeight;
@@ -222,7 +223,7 @@ function colorClock() {
     hslCnt = counter(hslCnt);
     darkColor = 'hsl(' + hslCnt + ', 80%, 10%)';
     bubbleColor = "hsla(" + hslCnt + ", 100%, 50%, 0.2)";
-    menuLightColor = "hsl(" + hslCnt + ", 100%, 90%)";
+    menuLightColor = "hsl(" + hslCnt + ", 100%, 94%)";
     MenuDarkColor = "hsl(" + hslCnt + ", 40%, 20%)";
     MenuFullColor = "hsl(" + hslCnt + ", 100%, 50%)";
 }
