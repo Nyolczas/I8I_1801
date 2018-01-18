@@ -168,9 +168,9 @@ Particle.prototype.draw = function () {
     }
 
     // pattanás plafon
-    if (this.y <= this.size) {
+    if (this.y <= this.size + 66) {
         this.veloY *= damping;
-        this.y = this.size;
+        this.y = this.size + 66;
     }
 
     // pattanás bal
@@ -201,7 +201,7 @@ Particle.prototype.draw = function () {
 
     // creation
     c.fillStyle = "hsla(" + hslCnt + ", 100%, 80%, " + this.age + ")";
-    c.font = "20px Arial";
+    c.font = "18px Lato";
     c.fillText(this.txt, this.x, this.y);
 };
 
