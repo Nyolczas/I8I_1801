@@ -78,6 +78,44 @@ h1 {
     background-color: var(--menu-light-color);
 }
 
+#x {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+#x::before, #x::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background-color: var(--menu-dark-color);
+}
+
+#x:hover::before, #x:hover::after {
+    background-color: var(--menu-full-color);
+}
+
+#x::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#x::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
 /* ================ Index vége ================ */
 
 /* ================ Bemutatkozás ================ */
