@@ -51,16 +51,31 @@ h1 {
 /* ================ Index ================ */
 
 #section {
-    max-width: 260px;
+    max-width: 170px;
     margin: 30vh auto 0px auto;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 25px;
+    border-radius: 3px;
     text-align: center;
     line-height: 1.4rem;
     letter-spacing: 0.05rem;
     color: var(--menu-dark-color);
     background-color: var(--menu-light-color);
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px black, 0px 0px 40px black, 0px 0px 80px black;
+    position: relative;
+}
+
+.heading2 {
+    margin: 0.2rem;
+}
+
+#close-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -20px;
+    top: -20px;
+    border-radius: 100%;
+    background-color: var(--menu-light-color);
 }
 
 /* ================ Index vége ================ */
@@ -84,27 +99,19 @@ h1 {
     text-align: justify;
 }
 
-@media (min-width: 425px) { 
+@media (min-width: 425px) {
     .article {
         padding: 20px 100px;
-    }  
+    }
 }
 
-@media (min-width: 576px) { 
-    
-}
+@media (min-width: 576px) {}
 
-@media (min-width: 768px) {
-    
-}
+@media (min-width: 768px) {}
 
-@media (min-width: 992px) { 
-    
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-    
-}
+@media (min-width: 1200px) {}
 
 /* ================ Bemutatkozás vége ================ */
 
