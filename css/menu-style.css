@@ -51,7 +51,7 @@ h1 {
 /* ================ Index ================ */
 
 #section {
-    max-width: 170px;
+    max-width: 80%;
     margin: 30vh auto 0px auto;
     padding: 25px;
     border-radius: 3px;
@@ -63,6 +63,12 @@ h1 {
     box-shadow: 0px 0px 20px black, 0px 0px 40px black, 0px 0px 80px black;
     position: relative;
     cursor: pointer;
+}
+
+@media (min-width: 325px) {
+    #section {
+        max-width: 300px;
+    }
 }
 
 .heading2 {
