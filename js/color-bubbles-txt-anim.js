@@ -91,8 +91,8 @@ function Circle(x, y, xSpeed, ySpeed, radius) {
         this.y += this.ySpeed;
 
         // interaktiv
-        if (mouse.x - this.x < mouseField && mouse.x - this.x > -mouseField
-            && mouse.y - this.y < mouseField && mouse.y - this.y > -mouseField) {
+        if (mouse.x - this.x < mouseField && mouse.x - this.x > -mouseField &&
+            mouse.y - this.y < mouseField && mouse.y - this.y > -mouseField) {
             if (this.radius < maxRadius * 3) {
                 document.getElementById("canvas").style.cursor = "pointer";
                 this.radius++;
@@ -153,8 +153,7 @@ function Particle() {
     this.maxLife = Math.random() * life + life / 3;
     if (TheTextWasWritten < txtParticleNum) {
         this.txt = textCloud[TheTextWasWritten];
-    }
-    else {
+    } else {
         this.txt = textCloud[parseInt(Math.random() * textCloud.length)];
     }
 }
