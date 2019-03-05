@@ -35,13 +35,14 @@ var textCloud = [
     "Character design", "Environment art",
     // bővebb - web
     "Sitebuild", "Responsive sitebuild", "Logó animáció", "Banner animáció",
+    "Wordpress",
     // szoftver
     "Photoshop", "Illustrator", "Maya", "AfterEffects",
     "Photoshop", "Illustrator", "Maya", "ZBrush", "AfterEffects", "InDesign",
     "AnimeStudio",
     // programnyelv
     "JavaScript", "Bootstrap", "JQuery", "Python", "HTML", "CSS",
-    "PHP", "MySQL", "NodeJS"
+    "PHP", "MySQL", "NodeJS", "ASP.NET", "Django", "C#"
 ];
 // =================================== Egér detektálás
 var mouse = {
@@ -236,7 +237,7 @@ function counter(x) {
         return x + 1;
     }
 }
-// ======================= color clock vége =======================
+// ======================= color clock end =======================
 // frame by frame
 setInterval(function () {
     c.clearRect(0, 0, W, H);
